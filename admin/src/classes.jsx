@@ -4,7 +4,6 @@ import {Datagrid, List, TextField, EditButton, BooleanField, Edit, Create, TextI
 export const ClassList = () => (
     <List>
         <Datagrid rowClick='edit'>
-            <TextField source="id" />
             <TextField source="name" />
             <TextField source="shortName" />
             <TextField source="school" />
