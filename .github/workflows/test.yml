@@ -22,6 +22,6 @@ jobs:
     - run: mv schedule-data-service/database/template_nodehill_schedule.db schedule-data-service/database/nodehill_schedule.db
     - run: cd ..
     - run: npm install -g newman
-    - run: new man run test-api-postman/admin-tests.postman_collection.json
-    - run: new man run test-api-postman/user-tests.postman_collection.json
-    - run: new man run test-api-postman/visitor-test.postman_collection.json
+    - run: newman run test-api-postman/admin-tests.postman_collection.json
+    - run: newman run test-api-postman/user-tests.postman_collection.json
+    - run: newman run test-api-postman/visitor-test.postman_collection.json
