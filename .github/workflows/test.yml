@@ -20,8 +20,8 @@ jobs:
     - run: cd admin/ && npm ci && npm run build
     - run: cd schedule-data-service/ && npm ci
     - run: mv schedule-data-service/database/template_nodehill_schedule.db schedule-data-service/database/nodehill_schedule.db
-    - run: npm install -g pm2
     - run: cd ..
+    - run: npm install -g pm2
     - run: npm install -g newman
     - run: cd schedule-data-service
     - run: pm2 start schedule-data-service/index.js
